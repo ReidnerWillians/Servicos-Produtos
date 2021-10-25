@@ -2,4 +2,4 @@
  Single page para produtos e serviços 
 
 ## Tarefas
-O controle das tarefas desse projeto serão realizadas no github
+O controle das tarefas desse projeto sera realizado no github
