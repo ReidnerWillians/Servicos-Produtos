@@ -10,15 +10,92 @@
 header{
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+
 }
 .img-wrapper {
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.img-wrapper img{
+.img-wrapper img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: zoom 25s;
 }
+@keyframes zoom{
+    0%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.banner h1{
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    font-family: "Baloo Da 2", serif;
+    font-weight: 300;
+    text-shadow: .3rem .4rem 3px rgba(0, 0, 0, .4);
+    line-height: 3.5rem;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+}
+
+.banner p{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-shadow: .3rem .4rem 3px rgba(0, 0, 0, .4);
+    font-family: "Baloo Da 2", serif;;
+    animation: moveBanner 1s 0.7s forwards;
+    opacity: 0;
+}
+
+.banner button{
+    font-family: "Mulish", serif;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    background: #ff0099;
+    background: -webkit-linear-gradient(to right, #ff0099, #493240);
+    background: linear-gradient(to right, #ff0099, #493240); 
+    padding: 13px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    animation: moveBanner 1s 0.9s forwards;
+}
+
+.banner button:hover{
+    color: violet;
+}
+
+@keyframes moveBanner{
+    0%{
+        transform: translate(20rem) rotateY(-30deg);
+    }
+    100%{
+        transform: translate(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
 
 
