@@ -74,7 +74,7 @@ header{
 .banner h1{
     color: #fff;
     font-size: 3.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-family: var(--font-primary);
     font-weight: 300;
     text-shadow: .3rem .4rem 3px rgba(0, 0, 0, .4);
@@ -86,7 +86,7 @@ header{
 .banner p{
     color: #fff;
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-shadow: .3rem .4rem 3px rgba(0, 0, 0, .4);
     font-family: var(--font-secundary);
     animation: moveBanner 1s 0.7s forwards;
@@ -107,6 +107,7 @@ header{
     cursor: pointer;
     opacity: 0;
     animation: moveBanner 1s 0.9s forwards;
+    margin-top: 30px;
 }
 
 .banner button:hover{
