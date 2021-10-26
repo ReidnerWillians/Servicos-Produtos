@@ -85,7 +85,7 @@ header{
 
 .banner p{
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 30px;
     text-shadow: .3rem .4rem 3px rgba(0, 0, 0, .4);
     font-family: var(--font-secundary);
@@ -125,11 +125,16 @@ header{
 }
 
 .sidebar{
-    width: 20rem;
+    width: 15rem;
     height: 100vh;
     background-color: #fff;
     position: fixed;
     top: 0;
+    right: -20rem;
+    transition: all 1.3s;
+}
+
+.sidebar.show-menu{
     right: 0;
 }
 
