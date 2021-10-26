@@ -172,7 +172,7 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    transition: background-color 1,5;
+    
 }
 
 .social-media i:hover{
