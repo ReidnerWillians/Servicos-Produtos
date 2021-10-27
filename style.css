@@ -185,13 +185,14 @@ header{
     background-color: rgb(231, 84, 231);
 }
 
-.conhecimentos {
+.conhecimentos{
     height: 100%;
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(6, 6rem);
+    grid-template-rows: repeat(6, 6rem); 
     row-gap: 0.5rem;
-  }
+    background-color: white;
+}
 
 .conhecimento:nth-child(1){
     grid-column: 4 / 7 ;
@@ -223,7 +224,48 @@ header{
     grid-row: 5 / -1;
 }
 
+.sessao-reader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .sessao-conhecimentos {
-    background-color: #f5f5f5;
+    background-color: white;
     height: 100%;
-  }
+}
+
+.sessao-reader h1{
+    font-family: var(--font-primary);
+    font-size: 5rem;
+    color:rgb(136, 10, 104);
+    border-bottom: solid 3px  #6a3093;
+    margin-bottom: 4rem;
+    height: 110px;   
+}
+
+.conhecimento-reader{
+    display: flex;
+    align-items: center;
+}
+
+.conhecimento-reader i{
+    font-size: 40px;
+}
+
+.conhecimento-reader h3{
+    font-family: var(--font-secundary);
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.conhecimento-text{
+    font-family: var(--font-secundary);
+    margin-top: 1rem;
+}
+
+.conhecimento-text p{
+    background-color: white;
+    color: rgb(69, 6, 75);
+}
+
